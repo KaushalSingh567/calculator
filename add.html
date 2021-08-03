@@ -1,0 +1,71 @@
+<html>
+<head>
+<script>
+    function add()
+    {
+        var first=window.document.myscreen.num1.value;
+        var second=window.document.myscreen.num2.value;
+        var result=parseInt(first)+parseInt(second);
+        window.document.myscreen.num3.value=result;
+    }
+    function sub()
+    {
+        var first=window.document.myscreen.num1.value;
+        var second=window.document.myscreen.num2.value;
+        var result=parseInt(first)-parseInt(second);
+        window.document.myscreen.num3.value=result;
+    }
+    function mul()
+    {
+        var first=window.document.myscreen.num1.value;
+        var second=window.document.myscreen.num2.value;
+        var result=parseInt(first)*parseInt(second);
+        window.document.myscreen.num3.value=result;
+    } 
+    function div()
+    {
+        var first=window.document.myscreen.num1.value;
+        var second=window.document.myscreen.num2.value;
+        var result=parseInt(first)/parseInt(second);
+        window.document.myscreen.num3.value=result;
+    }
+    function sqre()
+    {
+        var first=window.document.myscreen.num1.value;
+        var second=first;
+        var result=first*second;
+        window.document.myscreen.num3.value=result;
+    }
+function qube()
+{
+var first=window.document.myscreen.num1.value;
+var second=first;
+var third=first;
+
+var result=first*second*third;
+window.document.myscreen.num3.value=result;
+}
+</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<form name="myscreen">
+First number<input type="text" name="num1" placeholder="Enter first number"> <br>
+Second number<input type="text" name="num2" placeholder="Enter second number"><br>
+Show Result here<input type="text" name="num3" placeholder="Result"> <br>
+<input type="button" class="btn border-2 border-red-500" value="addition" onclick="add()">
+<input type="button" class="btn bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 " value="subtraction" onclick="sub()">
+<input type="button" class="btn bg-light-blue-600 opacity-25 " value="multiplecation" onclick="mul()">
+<input type="button" class="btn bg-blue-600 opacity-75" value="division" onclick="div()">
+<input type="button" value="sqre" onclick="sqre()">
+<input type="button" value="qube" onclick="qube()">
+</form>
+</body>
+</html>
+
+
+
