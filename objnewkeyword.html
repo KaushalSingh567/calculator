@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+    
+    var emp= new Object();
+    emp.eno=101;
+    emp.ename="kaushal";
+    emp.esal=70000;
+    emp.info=function(){
+        return this.eno + "\n" +this.ename + "\n" +this.esal;
+    }
+function f1()
+{
+
+    alert(emp.info());
+    // alert(emp.ename);
+    // alert(emp["esal"]);
+
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="submit" onclick="f1()">
+
+
+</body>
+</html>
