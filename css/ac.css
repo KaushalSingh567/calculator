@@ -1,0 +1,33 @@
+div {
+border-radius: 2px;
+border-color: black;
+background-color: chartreuse;
+width: 40%;
+height: 40%;
+
+margin: 100px 0 0 140px;
+
+padding: 50px  ;
+}
+.ah{
+
+width:50% ;
+height: 20px;    
+align-items: center;
+margin: 8px;
+padding: 20px;
+border:1px solid #ccc  ;
+border-radius: 4px;
+box-sizing: border-box;
+
+}
+.aj{
+    margin-left: 90px;
+    /* align-items: center; */
+background-color:white ;
+border:none ;
+padding: 10px;
+text-align: center;
+font-size: large;
+cursor: pointer;
+}
