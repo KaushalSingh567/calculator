@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+       function val()
+       {
+            var sel=document.getElementById("sel").value;   
+            var fn=parseInt(document.getElementById("text").value);
+            var sn=parseInt(document.getElementById("text1").value);
+            var rel=document.getElementById("rel");
+           switch(sel)
+           {
+            //    case "select":
+            //        rel.value="";
+               case "+":
+                    rel.value=fn+sn;
+                    break;
+              case "-":
+                    rel.value=fn-sn;
+                    break;
+              case "*":
+                    rel.value=fn*sn;
+                    break;
+              case "/":
+                    rel.value=fn/sn;
+                    break;
+           }
+
+       }
+   </script>
+</head>
+      <body>
+        Enter first number<input type="text" id="text" placeholder="Enter First Number"><br>
+        Enter Second number<input type="text" id="text1" placeholder="Enter Second Number"><br>
+    
+        
+        Operator<select id="sel" onchange="val()">
+            <option value="Select">Select</option>
+            <option value="+">Addition</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+    </select><br>
+    Show Result Here<input type="text" id="rel" placeholder="Result" readonly><br>
+      </body>
+</html>
