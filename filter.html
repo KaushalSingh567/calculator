@@ -1,0 +1,15 @@
+<html>
+<body>
+    <script>
+    let arr=[10,20,30,40,50,60,70];
+    let arr1=arr.filter(fun)           //filter function
+    function fun(num)
+    {
+        if(num>50)
+        {return num}
+    }
+    let arr2=arr.filter(num=>num<50);   // filter with arrow function
+    console.log(arr1 + " " + arr2);
+    </script>
+</body>
+</html>
